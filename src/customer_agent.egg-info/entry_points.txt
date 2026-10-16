@@ -1,0 +1,3 @@
+[console_scripts]
+customer-agent = customer_agent.main:run
+customer-agent-import-policies = customer_agent.import_policies:main

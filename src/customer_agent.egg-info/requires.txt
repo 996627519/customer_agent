@@ -1,0 +1,11 @@
+langgraph<2,>=1.0
+langchain-core<2,>=1.0
+langchain-deepseek<2,>=1.1
+httpx2==2.12.0
+fastapi<1,>=0.115
+uvicorn[standard]<1,>=0.34
+sqlalchemy<3,>=2.0
+pymysql[rsa]<2,>=1.1
+argon2-cffi<26,>=23.1
+pydantic-settings<3,>=2.6
+python-multipart<1,>=0.0.18

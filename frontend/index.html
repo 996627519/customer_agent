@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f8"><title>客服 Agent</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div id="auth" class="auth-wrap" hidden></div>
+  <div id="app" class="layout" hidden>
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">C</span><span>Careflow<small>AI SUPPORT</small></span></div>
+      <button id="new-chat" class="new-chat">＋ 新建对话</button>
+      <div class="section-label">最近对话</div><div id="chat-list" class="chat-list"></div>
+      <div class="sidebar-bottom"><div class="privacy-note">🔒 订单只会在登录用户授权后查询。<br>政策回答会显示检索来源。</div><div class="account"><span id="username"></span><button id="logout">退出</button></div></div>
+    </aside>
+    <main class="main">
+      <header><div><span class="eyebrow">CUSTOMER SUPPORT</span><h1>售后服务助手</h1></div><div id="status" class="status"><i></i>在线</div></header>
+      <section id="conversation" class="conversation"><div id="welcome" class="welcome"><div class="welcome-mark">✦</div><p class="eyebrow">您好，欢迎咨询</p><h2>有什么可以帮您？</h2><p>我可以协助查询退换货政策。涉及订单时，会先校验当前账号的访问权限。</p><div class="suggestions"><button>跑鞋不合适可以退吗？</button><button>退货运费由谁承担？</button><button>我想换一个尺码</button></div></div><div id="messages"></div></section>
+      <form id="composer" class="composer"><textarea id="message" rows="1" maxlength="4000" placeholder="输入问题… 例如：那如果我换码呢？" required></textarea><button id="send" aria-label="发送">↑</button><div class="composer-hint">AI 回复可能需要核实；政策答复以页面来源和客服确认为准。</div></form>
+    </main>
+  </div>
+  <div id="toast" role="status"></div>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>
